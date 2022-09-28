@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Equipe-Azul-Residencia-De-Software  
 # Colaboradores  
   
