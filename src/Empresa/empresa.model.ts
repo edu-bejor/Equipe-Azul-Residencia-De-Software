@@ -1,4 +1,4 @@
-import { Localizacao } from './localizacao.model';
+import { Location } from './location.model';
 
 export class Empresa{
     id: number;
@@ -6,5 +6,5 @@ export class Empresa{
     estagiarios: Array<number>;
     logo: string;
     setores: Array<string>;
-    localizacao: Localizacao;
+    location: Location;
 }
