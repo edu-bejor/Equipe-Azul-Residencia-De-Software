@@ -5,8 +5,7 @@
 O objetivo do sistema de oferta de estágios reestruturado é apresentar à comunidade Mackenzista uma forma mais clara e objetiva de acompanhar as ofertas de estágio, mais condizente com a FCI em termos técnologicos, de visual e praticidade, além de aproximar aqueles que estão em busca de vagas de estágio em determinada empresa daqueles que já trabalharam ou trabalham atualmente nela.     
 
 ## Descrição  
-Inicialmente realizamos um brainstorming para levantar os requisitos do projeto. Em seguida, preenchemos um modelo de [documento de requisitos]
-
+Inicialmente realizamos um brainstorming para levantar os requisitos do projeto. Em seguida, preenchemos um modelo de [documento de requisitos](https://lab-mackleaps.gitbook.io/residencia-de-software/projetos#estagio-fci), com os requisitos que elicitamos neste brainstorming, detalhando a prioridade, atores e a funcionalidade de cada um, 
 ## Ferramentas  
 - IDE: VsCode  
 - Linguagem: TypeScript
@@ -21,4 +20,4 @@ Inicialmente realizamos um brainstorming para levantar os requisitos do projeto.
 - Vinicius Leite Do Carmo Lima  
 
 ## Links para recursos:  
-- <https://mackenzie365-my.sharepoint.com/:w:/g/personal/1091981_mackenzie_br/EQ-3SUVslmVLkbWl7Ivv5LsBYMTidlwbadUrS3aJ80EGFw?rtime=v8-mbta82kg>
+- Documento de requisitos: <https://lab-mackleaps.gitbook.io/residencia-de-software/projetos#estagio-fci>
