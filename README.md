@@ -20,4 +20,4 @@ Inicialmente realizamos um brainstorming para levantar os requisitos do projeto.
 - Vinicius Leite Do Carmo Lima  
 
 ## Links para recursos:  
-- Documento de requisitos: <https://2346357364-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F7u5Ie7aXnzkhZ3fwalBr%2Fuploads%2Fi6St9VeCaN9Dra16xxHM%2FEstagio%20FCI.pdf?alt=media&token=9912449b-690b-4587-ae25-2f2c681650aa>
+- [Documento de requisitos](https://2346357364-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F7u5Ie7aXnzkhZ3fwalBr%2Fuploads%2Fi6St9VeCaN9Dra16xxHM%2FEstagio%20FCI.pdf?alt=media&token=9912449b-690b-4587-ae25-2f2c681650aa)
