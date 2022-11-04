@@ -1,5 +1,5 @@
 #Especifica a imagem para servir de base
-FROM typescript:latest
+FROM node:latest
 
 #quando o container finalizar terá um diretorio "raiz"
 WORKDIR /app
@@ -20,5 +20,4 @@ RUN npm install
 EXPOSE 80
 
 #Padronizar a execução de um container
-#CMD 
-RUN npm start
+CMD ["npm", "start"]
