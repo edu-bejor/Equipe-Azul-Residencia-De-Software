@@ -80,4 +80,28 @@ export class AppService {
     }
     return results;
   }
+    // Operação a ser chamada quando requisição PUT é feita no caminho /empresas
+    modifyEmpresa(idEmpresa: number, empresa: string):Object{
+    const objectEmp = JSON.parse(empresa); //transforma string JSON que veio como parâmetro em objeto Empresa
+    const posIndexEmp = this.getIndexOfEmpresaInArrayByItsId(sampleData, idEmpresa); // encontra posição da empresa com o ID passado em "sampleData" e retorna a posição ou -1 se nenhuma com aquele id for encontrada
+    if (posIndexEmp === -1){ //caso a empresa não tenha sido encontrada
+      return {
+        status: 'Empresa não encontrada.' // retorna este objeto
+      }
+    }
+    sampleData[posIndexEmp] = objectEmp; // de outra forma, substitui a empresa antiga na posição pela empresa passada como parametro e... 
+    return {
+      status: 'Empresa alterada.' // retorna este objeto que diz que a operação teve sucesso.
+    }
+  }
+
+  // Mini função que retorna posição de empresa em array a partir de seu ID, que pode ser necessária acima, em PUT, e em Delete.
+  getIndexOfEmpresaInArrayByItsId(arr: Array<Empresa>, id: number):number {
+    for(let i = 0; i<arr.length; i++){
+      if (arr[i].id === id){
+        return i; // retorna posição da empresa que tiver id correspondente ao passado como parâmetro
+      }
+    return -1; // retorna -1 caso nenhuma seja encontrada.
+    }
+  }
 }
