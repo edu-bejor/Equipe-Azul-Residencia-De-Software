@@ -10,4 +10,9 @@ export class AppController {
   getEmpresas(@Query('name') name: string, @Query('location') location: string): Array<Empresa>{
     return this.appService.getEmpresas(name, location);
   }
+  
+  @Put()
+  modifyEmpresa(@Headers('idEmpresa') id: number, @Body() empresa:string):Object{
+    return this.appService.modifyEmpresa(id, empresa)
+  }
 }
