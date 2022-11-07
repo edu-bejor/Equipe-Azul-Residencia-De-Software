@@ -1,4 +1,4 @@
-import { Controller, Get, Query, Headers, Body } from '@nestjs/common';
+import { Controller, Get, Query, Headers, Body, Put } from '@nestjs/common';
 import { AppService } from './app.service';
 import { Empresa } from './Empresa/empresa.model';
 
@@ -12,7 +12,7 @@ export class AppController {
   }
   
   @Put()
-  modifyEmpresa(@Headers('idEmpresa') id: number, @Body() empresa:string):Object{
+  modifyEmpresa(@Headers('idEmpresa') id: string, @Body() empresa:Empresa):Object{
     return this.appService.modifyEmpresa(id, empresa)
   }
 }
