@@ -13,6 +13,9 @@ Com estes objetos bem definidos, realizamos uma pesquisa para decidirmos qual *f
 
 No NestJS, prototipamos com auxílio de um banco de dados exemplo um filtro para a pesquisa de empresas que se baseava em determinadas categorias já definidas no Swagger, a fim de avaliar o uso do *framework* e se familiarizar com sua estrutura e sintaxe.
 
+## Instruções  
+Para rodar o projeto localmente(windows) precisamos baixar [NodeJS](https://nodejs.org/en/) versão 18.12.1 LTS, depois abrir o projeto na IDE de preferência e para baixar o [NestJS](https://nestjs.com/) abra um terminal e dê o seguinte comando: *npm install @nests/core* .Por fim para rodar o projeto é só executar o seguinte comando no terminal: *npm run start* e abrir uma aba no navegador como localhost.
+Já no Linux, para instalar [NodeJS](https://nodejs.org/en/) dê o seguinte comando: *sudo apt install nodejs -y* e para instalar o [NestJS](https://nestjs.com/) dê: *sudo apt install npm -y* .Por fim para rodar o projeto são as mesmas instruções dada acima.
 ## Ferramentas  
 - IDE: VsCode  
 - Linguagem: TypeScript
