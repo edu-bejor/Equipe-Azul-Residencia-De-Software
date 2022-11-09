@@ -1,23 +1,25 @@
-#Especifica a imagem para servir de base
-FROM node:latest
+FROM node:lts-alpine3.14 as BUILD
 
-#quando o container finalizar terá um diretorio "raiz"
 WORKDIR /app
 
-#copia o arquivo para dentro do container
 COPY . /app
 
-#especifica uma url para realizar o download
-#ADD
-
-#executa algum comando dentro do container
 RUN npm install
 
-#criação de uma variavel de ambiente
-#ENV
+RUN npm run build
 
-#expoe uma porta do container qdo for iniciado
-EXPOSE 80
+FROM nginx:1.21.3-alpine
 
-#Padronizar a execução de um container
-CMD ["npm", "start"]
+WORKDIR /etc/nginx
+
+RUN rm -rf /usr/share/nginx/html/*
+
+COPY --from=BUILD /app/build /usr/share/nginx/html
+
+RUN rm /etc/nginx/conf.d/default.conf
+
+COPY /nginx/nginx.conf /etc/nginx/conf.d/nginx.conf
+
+EXPOSE 3000 80
+
+CMD ["nginx", "-g", "daemon off;"]
